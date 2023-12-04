@@ -1,14 +1,18 @@
 package com.youtube.stepdefinitions;
+import com.youtube.questions.ListarCoincidenciasQuestions;
 import com.youtube.tasks.PaginaDeResultadosTask;
 import com.youtube.tasks.PaginaInicialTask;
-import com.youtube.tasks.PaginaReproduccion;
+import com.youtube.tasks.PaginaReproduccionUI;
 import com.youtube.tasks.RealizarBusquedaTask;
 import io.cucumber.java.Before;
 import io.cucumber.java.es.*;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import org.hamcrest.Matchers;
 
-import static net.serenitybdd.screenplay.actors.OnStage.setTheStage;
-import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
+import java.util.regex.Matcher;
+
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+import static net.serenitybdd.screenplay.actors.OnStage.*;
 
 public class YouTubeStepsDefinitions {
     @Before
@@ -24,12 +28,18 @@ public class YouTubeStepsDefinitions {
     }
     @Cuando("el usuario realiza la busqueda de un video")
     public void elUsuarioRealizaLaBusquedaDeUnVideo() {
-        theActorCalled("usuario").wasAbleTo(
+        theActorInTheSpotlight().attemptsTo(
                 RealizarBusquedaTask.buscarVideo(),
                 PaginaDeResultadosTask.listarResultados()
         );
     }
     @Entonces("el sistema reproducira el video")
     public void elSistemaReproduciraElVideo() {
+        theActorInTheSpotlight().should(
+                seeThat(
+                        ListarCoincidenciasQuestions.verificarReproduccion(),
+                        Matchers.equalTo(true)
+                )
+        );
     }
 }

@@ -1,14 +1,19 @@
 package com.youtube.questions;
 
+import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
 
-public class ListarCoincidenciasQuestions implements Question {
-    @Override
-    public Object answeredBy(Actor actor) {
-        return null;
-    }
+import static com.youtube.tasks.PaginaReproduccionUI.TXT_REPRODUCCION;
 
-    // El elemento que me trae los tags es
-    // //*[@class="yt-simple-endpoint style-scope ytd-video-renderer"]
+public class ListarCoincidenciasQuestions implements Question <Boolean>{
+
+    @Override
+    public Boolean answeredBy(Actor actor) {
+        WebElementFacade titulo = TXT_REPRODUCCION.resolveFor(actor);
+        return titulo.isDisplayed();
+    }
+    public static Question<Boolean> verificarReproduccion(){
+        return new ListarCoincidenciasQuestions();
+    }
 }
