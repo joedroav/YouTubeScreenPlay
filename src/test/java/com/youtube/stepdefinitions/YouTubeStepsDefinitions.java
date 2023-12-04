@@ -2,14 +2,11 @@ package com.youtube.stepdefinitions;
 import com.youtube.questions.ListarCoincidenciasQuestions;
 import com.youtube.tasks.PaginaDeResultadosTask;
 import com.youtube.tasks.PaginaInicialTask;
-import com.youtube.tasks.PaginaReproduccionUI;
 import com.youtube.tasks.RealizarBusquedaTask;
 import io.cucumber.java.Before;
 import io.cucumber.java.es.*;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import org.hamcrest.Matchers;
-
-import java.util.regex.Matcher;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.*;

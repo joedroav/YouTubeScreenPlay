@@ -3,8 +3,7 @@ package com.youtube.questions;
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
-
-import static com.youtube.tasks.PaginaReproduccionUI.TXT_REPRODUCCION;
+import static com.youtube.UI.PaginaReproduccionUI.TXT_REPRODUCCION;
 
 public class ListarCoincidenciasQuestions implements Question <Boolean>{
 

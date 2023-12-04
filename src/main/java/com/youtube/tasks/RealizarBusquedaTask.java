@@ -4,12 +4,11 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Enter;
 import org.openqa.selenium.Keys;
-
 import static com.youtube.UI.BusquedaUI.TXT_BUSQUEDA;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class RealizarBusquedaTask implements Task {
-    public static String textoBuscado = "Soda Stereo";
+    public static String textoBuscado = "citrix";
     @Override
     public <T extends Actor> void performAs(T actor) {
 
@@ -18,8 +17,4 @@ public class RealizarBusquedaTask implements Task {
     }
         public static RealizarBusquedaTask buscarVideo(){
             return instrumented(RealizarBusquedaTask.class);}
-
-    public static String getTextoBuscado() {
-        return textoBuscado;
-    }
 }
