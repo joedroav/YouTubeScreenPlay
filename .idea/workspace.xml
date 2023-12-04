@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="736decb4-97b9-44dc-8ad8-0f468fa559a6" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youtube/questions/ListarCoincidenciasQuestions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youtube/questions/ListarCoincidenciasQuestions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youtube/tasks/PaginaDeResultadosTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youtube/tasks/PaginaDeResultadosTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youtube/tasks/PaginaReproduccion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youtube/tasks/PaginaReproduccionUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/youtube/tasks/RealizarBusquedaTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/youtube/tasks/RealizarBusquedaTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/youtube/runners/YouTubeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/youtube/runners/YouTubeRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/youtube/stepdefinitions/YouTubeStepsDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/youtube/stepdefinitions/YouTubeStepsDefinitions.java" afterDir="false" />
-    </list>
+    <list default="true" id="736decb4-97b9-44dc-8ad8-0f468fa559a6" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
